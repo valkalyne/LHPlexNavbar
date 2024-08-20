@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
+        UseLayoutRounding="True"
         Title="Toolbar" Height="47
         " Width="650" Background="{x:Null}" Foreground="{x:Null}" WindowStyle="None" AllowsTransparency="True">
     <Grid>
         <Button Content="Button" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="1.068,-2.424" Click="Button_Click"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="118,58,0,0" VerticalAlignment="Top" Foreground="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}"/>
-        <Image Margin="46,5,569,9" Source="/Untitled1198_20240607120831.png" Stretch="Fill" RenderTransformOrigin="0,0"/>
-        <Image Margin="10,7,604,8" Source="/Untitled1199_20240607120808.png" Stretch="Fill" RenderTransformOrigin="0,0"/>
-        <Image Source="/an.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center" Width="496" Height="34"/>
+        <Image Margin="46,5,0,0" Source="/Untitled1198_20240607120831.png" Stretch="Fill" RenderTransformOrigin="0,0" SnapsToDevicePixels="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="34"/>
+        <Image x:Name="image" Margin="10,0,0,0" Source="/Untitled1199_20240607120808.png" Stretch="Fill" RenderTransformOrigin="0,0" SnapsToDevicePixels="True" VerticalAlignment="Center" HorizontalAlignment="Left" Width="36" Height="33"/>
+        <Image Source="/an.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center" Width="496" Height="34" Opacity="0.2"/>
     </Grid>
 </Window>

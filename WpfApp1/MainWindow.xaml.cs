@@ -59,8 +59,11 @@ namespace WpfApp1
             src.RootVisual = (Visual)window.Content;
             var navbar = FindWindowEx(explorerwindow, 0, "WorkerW", null);
             SetWindowLong(navbar, -16, 0x46000000);
-            Show();
-            
+            window.parent = explorerwindow;
+            Task.Run(() =>
+            {
+                window.mainloop();
+            });
         }
     }
 }
